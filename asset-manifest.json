@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/scoopii-kiosk/static/css/main.d9366e3d.css",
-    "main.js": "/scoopii-kiosk/static/js/main.1bf56f2f.js",
+    "main.js": "/scoopii-kiosk/static/js/main.82339e02.js",
     "static/js/453.b7b322fc.chunk.js": "/scoopii-kiosk/static/js/453.b7b322fc.chunk.js",
     "index.html": "/scoopii-kiosk/index.html",
     "main.d9366e3d.css.map": "/scoopii-kiosk/static/css/main.d9366e3d.css.map",
-    "main.1bf56f2f.js.map": "/scoopii-kiosk/static/js/main.1bf56f2f.js.map",
+    "main.82339e02.js.map": "/scoopii-kiosk/static/js/main.82339e02.js.map",
     "453.b7b322fc.chunk.js.map": "/scoopii-kiosk/static/js/453.b7b322fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9366e3d.css",
-    "static/js/main.1bf56f2f.js"
+    "static/js/main.82339e02.js"
   ]
 }
