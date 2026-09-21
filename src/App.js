@@ -1,23 +1,64 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
+import Home from './pages/Home';
+import Menu from './pages/Menu';
+import Order from './pages/Order';
+import Payment from './pages/Payment';
+import Complete from './pages/Complete';
 function App() {
+
+  const [selected, setSelected] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Routes>
+
+        <Route
+          path='/'
+          element={<Home />}
+        />
+
+        <Route
+          path='/menu'
+          element={
+            <Menu
+              selected={selected}
+              setSelected={setSelected}
+            />
+          }
+        />
+
+        <Route
+          path='/order'
+          element={
+            <Order
+              selected={selected}
+            />
+          }
+        />
+
+        <Route
+          path='/payment'
+          element={
+            <Payment
+              selected={selected}
+            />
+          }
+        />
+<Route
+  path='/complete'
+  element={
+    <Complete
+      selected={selected}
+      setSelected={setSelected}
+    />
+  }
+/>
+      </Routes>
+
     </div>
   );
 }
